@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-</head>
+  <body>
+    <section id="header">
+      <header>
+        <nav id="main-nav">
+          <ul>
+            <li>
+              <a href="/">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjODg4ODg4IiBkPSJNMzA0IDI4MGg0MTZjNC40IDAgOC0zLjYgOC04YzAtNDAtOC44LTc2LjctMjUuOS0xMDguMWMtMTcuMi0zMS41LTQyLjUtNTYuOC03NC03NEM1OTYuNyA3Mi44IDU2MCA2NCA1MjAgNjRoLTE2Yy00MCAwLTc2LjcgOC44LTEwOC4xIDI1LjljLTMxLjUgMTcuMi01Ni44IDQyLjUtNzQgNzRDMzA0LjggMTk1LjMgMjk2IDIzMiAyOTYgMjcyYzAgNC40IDMuNiA4IDggOCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik05NDAgNTEySDc5MlY0MTJjNzYuOCAwIDEzOS02Mi4yIDEzOS0xMzljMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgMzQuOC0yOC4yIDYzLTYzIDYzSDIzMmMtMzQuOCAwLTYzLTI4LjItNjMtNjNjMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgNzYuOCA2Mi4yIDEzOSAxMzkgMTM5djEwMEg4NGMtNC40IDAtOCAzLjYtOCA4djU2YzAgNC40IDMuNiA4IDggOGgxNDh2OTZjMCA2LjUuMiAxMyAuNyAxOS4zQzE2NC4xIDcyOC42IDExNiA3OTYuNyAxMTYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC00NC4yIDIzLjktODIuOSA1OS42LTEwMy43YzYgMTcuMiAxMy42IDMzLjYgMjIuNyA0OWMyNC4zIDQxLjUgNTkgNzYuMiAxMDAuNSAxMDAuNWMyOC45IDE2LjkgNjEgMjguOCA5NS4zIDM0LjVjNC40IDAgOC0zLjYgOC04VjQ4NGMwLTQuNCAzLjYtOCA4LThoNjBjNC40IDAgOCAzLjYgOCA4djQ2NC4yYzAgNC40IDMuNiA4IDggOGMzNC4zLTUuNyA2Ni40LTE3LjYgOTUuMy0zNC41YzQxLjUtMjQuMyA3Ni4yLTU5IDEwMC41LTEwMC41YzkuMS0xNS41IDE2LjctMzEuOSAyMi43LTQ5QzgxMi4xIDc5My4xIDgzNiA4MzEuOCA4MzYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC03OS4zLTQ4LjEtMTQ3LjQtMTE2LjctMTc2LjdjLjQtNi40LjctMTIuOC43LTE5LjN2LTk2aDE0OGM0LjQgMCA4LTMuNiA4LTh2LTU2YzAtNC40LTMuNi04LTgtOCIvPjwvc3ZnPg=="
+                  alt="logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="/pricing.html">pricing</a>
+            </li>
+            <li>
+              <a href="/about.html">About us</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact us</a>
+            </li>
+          </ul>
 
-<body>
-  <header id="header">
-    <nav id="main-nav">
-      <ul>
-        <li>
-          <a href="/">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjODg4ODg4IiBkPSJNMzA0IDI4MGg0MTZjNC40IDAgOC0zLjYgOC04YzAtNDAtOC44LTc2LjctMjUuOS0xMDguMWMtMTcuMi0zMS41LTQyLjUtNTYuOC03NC03NEM1OTYuNyA3Mi44IDU2MCA2NCA1MjAgNjRoLTE2Yy00MCAwLTc2LjcgOC44LTEwOC4xIDI1LjljLTMxLjUgMTcuMi01Ni44IDQyLjUtNzQgNzRDMzA0LjggMTk1LjMgMjk2IDIzMiAyOTYgMjcyYzAgNC40IDMuNiA4IDggOCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik05NDAgNTEySDc5MlY0MTJjNzYuOCAwIDEzOS02Mi4yIDEzOS0xMzljMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgMzQuOC0yOC4yIDYzLTYzIDYzSDIzMmMtMzQuOCAwLTYzLTI4LjItNjMtNjNjMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgNzYuOCA2Mi4yIDEzOSAxMzkgMTM5djEwMEg4NGMtNC40IDAtOCAzLjYtOCA4djU2YzAgNC40IDMuNiA4IDggOGgxNDh2OTZjMCA2LjUuMiAxMyAuNyAxOS4zQzE2NC4xIDcyOC42IDExNiA3OTYuNyAxMTYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC00NC4yIDIzLjktODIuOSA1OS42LTEwMy43YzYgMTcuMiAxMy42IDMzLjYgMjIuNyA0OWMyNC4zIDQxLjUgNTkgNzYuMiAxMDAuNSAxMDAuNWMyOC45IDE2LjkgNjEgMjguOCA5NS4zIDM0LjVjNC40IDAgOC0zLjYgOC04VjQ4NGMwLTQuNCAzLjYtOCA4LThoNjBjNC40IDAgOCAzLjYgOCA4djQ2NC4yYzAgNC40IDMuNiA4IDggOGMzNC4zLTUuNyA2Ni40LTE3LjYgOTUuMy0zNC41YzQxLjUtMjQuMyA3Ni4yLTU5IDEwMC41LTEwMC41YzkuMS0xNS41IDE2LjctMzEuOSAyMi43LTQ5QzgxMi4xIDc5My4xIDgzNiA4MzEuOCA4MzYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC03OS4zLTQ4LjEtMTQ3LjQtMTE2LjctMTc2LjdjLjQtNi40LjctMTIuOC43LTE5LjN2LTk2aDE0OGM0LjQgMCA4LTMuNiA4LTh2LTU2YzAtNC40LTMuNi04LTgtOCIvPjwvc3ZnPg==" alt="logo">
-          </a>
-        </li>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="services.html">Services</a>
-        </li>
-        <li>
-          <a href="/pricing.html">pricing</a>
-        </li>
-        <li>
-          <a href="/about.html">About us</a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact us</a>
-        </li>
-      </ul>
-      <div id="nav-login" >
-        <div class="div-inline">
-          <a href="register.html">Register</a>
+          <div id="nav-login">
+            <div class="div-inline">
+              <a href="register.html">Register</a>
+            </div>
+            <div id="login" class="div-inline">
+              <a href="login.html">Login</a>
+            </div>
+          </div>
+
+          <div id="mobile-menu">
+            <input type="checkbox" id="menu-checkbox" />
+            <label for="menu-checkbox" class="dropdown-menu-btn">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+                alt="mobile-menu"
+              />
+            </label>
+            <div id="dropdown-menu">
+              <div>
+                <ul>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="/pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="/about.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="/contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <div id="body-wrapper">
+      <div>
+        <div class="div-center">
+          <h1 class="page-title">Pricing</h1>
         </div>
-        <div id="login" class="div-inline">
-          <a href="login.html">Login</a>
+
+        <div class="div-center">
+          <ul id="pricing">
+            <li>
+              <div>
+                <h2>Free</h2>
+                <p>For personal side project</p>
+                <div class="price">
+                  <span>$0</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2>Pro</h2>
+                <p>Everything from Free and more</p>
+                <div class="price">
+                  <span>$100</span>
+                  <span id="text-per-month">per month</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2>Enterprise</h2>
+                <p>Pay what you need</p>
+                <div class="price">
+                  <span>Custom</span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="mobile-menu">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="dropdown-menu-btn">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg==" alt="mobile-menu">
-        </label>
-        <div id="dropdown-menu">
-          <div>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="/pricing.html">Pricing</a>
-              </li>
-              <li>
-                <a href="/about.html">About us</a>
-              </li>
-              <li>
-                <a href="/contact.html">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <div>
-    <div class="div-center">
-      <h1 style="font-size: 60px;">Pricing</h1>
     </div>
 
-    <div class="div-center">
-      <ul id="pricing">
-        <li>
-          <div>
-            <h2>Free</h2>
-            <p>For personal side project</p>
-            <div class="price">
-              <span>$0</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h2>Pro</h2>
-            <p>Everything from Free and more</p>
-            <div class="price">
-              <span>$100</span>
-              <span id="text-per-month">per month</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h2>Enterprise</h2>
-            <p>Pay what you need</p>
-            <div class="price">
-              <span>Custom</span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="height: 1000000px;"></div>
-</body>
-
+    <div style="height: 1000000px"></div>
+  </body>
 </html>
