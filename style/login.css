@@ -1,0 +1,54 @@
+.body-wrapper > div {
+  width: 100%;
+  max-width: 350px;
+}
+
+#login-wrapper {
+  padding: 10px;
+  flex: 0 1;
+  margin-top: 50px;
+  border-radius: 5px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.login-form {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-form > input {
+  margin-bottom: 10px;
+  /* max-width: 300px; */
+  padding: 5px;
+}
+
+.login-submit {
+  display: inline-flex;
+  width: 60px;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  border-style: none;
+  box-shadow: var(--main-box-shadow);
+  padding: 5px;
+}
+
+#forget-password {
+  display: inline-block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+#forget-password > a {
+  font-size: small;
+  text-decoration: underline;
+  color: blue;
+}
+
+.dont-have-account {
+  text-decoration: underline;
+  color: blue;
+}

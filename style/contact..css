@@ -1,0 +1,26 @@
+ul.contact-info {
+  list-style: circle;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 20px;
+}
+
+ul.contact-info p {
+  margin: 0;
+}
+
+ul {
+  margin: 0 0px 0 30px;
+}
+
+h2 {
+  margin: 20px 0 0 0 ;
+}
+
+p > a {
+  color: blue !important;
+}
+
+/* ul.contact-info li {
+  padding: 5px 0;
+} */

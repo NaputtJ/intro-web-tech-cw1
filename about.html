@@ -4,48 +4,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/sidebar.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <nav id="main-nav">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="services.html">Services</a>
-        </li>
-        <li>
-          <a href="/pricing.html">pricing</a>
-        </li>
-        <li>
-          <a href="/about.html">About us</a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <div>
-    <h1>Our mission</h1>
-    <span>
-      We help you create chaos in your favorite code base!!!
-    </span>
-    <p>
-      Buggenerator doesn't see bugs as glitches, but as stepping stones to innovation! We believe that every
-      unexpected behavior holds the potential for an amazing user experience.
-    </p>
-    <div class="quote">
-      <span style="font-weight: bold;">"Life is either a daring adventure or nothing at all." - Helen Keller, American author and activist</span>
+  <section id="header">
+    <header>
+      <nav id="main-nav" role="navigation">
+        <ul>
+          <li>
+            <a href="/">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjODg4ODg4IiBkPSJNMzA0IDI4MGg0MTZjNC40IDAgOC0zLjYgOC04YzAtNDAtOC44LTc2LjctMjUuOS0xMDguMWMtMTcuMi0zMS41LTQyLjUtNTYuOC03NC03NEM1OTYuNyA3Mi44IDU2MCA2NCA1MjAgNjRoLTE2Yy00MCAwLTc2LjcgOC44LTEwOC4xIDI1LjljLTMxLjUgMTcuMi01Ni44IDQyLjUtNzQgNzRDMzA0LjggMTk1LjMgMjk2IDIzMiAyOTYgMjcyYzAgNC40IDMuNiA4IDggOCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik05NDAgNTEySDc5MlY0MTJjNzYuOCAwIDEzOS02Mi4yIDEzOS0xMzljMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgMzQuOC0yOC4yIDYzLTYzIDYzSDIzMmMtMzQuOCAwLTYzLTI4LjItNjMtNjNjMC00LjQtMy42LTgtOC04aC02MGMtNC40IDAtOCAzLjYtOCA4YzAgNzYuOCA2Mi4yIDEzOSAxMzkgMTM5djEwMEg4NGMtNC40IDAtOCAzLjYtOCA4djU2YzAgNC40IDMuNiA4IDggOGgxNDh2OTZjMCA2LjUuMiAxMyAuNyAxOS4zQzE2NC4xIDcyOC42IDExNiA3OTYuNyAxMTYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC00NC4yIDIzLjktODIuOSA1OS42LTEwMy43YzYgMTcuMiAxMy42IDMzLjYgMjIuNyA0OWMyNC4zIDQxLjUgNTkgNzYuMiAxMDAuNSAxMDAuNWMyOC45IDE2LjkgNjEgMjguOCA5NS4zIDM0LjVjNC40IDAgOC0zLjYgOC04VjQ4NGMwLTQuNCAzLjYtOCA4LThoNjBjNC40IDAgOCAzLjYgOCA4djQ2NC4yYzAgNC40IDMuNiA4IDggOGMzNC4zLTUuNyA2Ni40LTE3LjYgOTUuMy0zNC41YzQxLjUtMjQuMyA3Ni4yLTU5IDEwMC41LTEwMC41YzkuMS0xNS41IDE2LjctMzEuOSAyMi43LTQ5QzgxMi4xIDc5My4xIDgzNiA4MzEuOCA4MzYgODc2YzAgNC40IDMuNiA4IDggOGg1NmM0LjQgMCA4LTMuNiA4LThjMC03OS4zLTQ4LjEtMTQ3LjQtMTE2LjctMTc2LjdjLjQtNi40LjctMTIuOC43LTE5LjN2LTk2aDE0OGM0LjQgMCA4LTMuNiA4LTh2LTU2YzAtNC40LTMuNi04LTgtOCIvPjwvc3ZnPg=="
+                alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="/pricing.html">pricing</a>
+          </li>
+          <li>
+            <a href="/about.html">About us</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact us</a>
+          </li>
+        </ul>
+  
+        <div id="nav-login">
+          <div class="div-inline search-form-wrapper">
+            <form action="" onsubmit="">
+              <div class="search-wrapper">
+                <div class="search-label-wrapper">
+                  <label for="search" class="search-label">
+                    <img
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0xNS41IDE0aC0uNzlsLS4yOC0uMjdBNi40NzEgNi40NzEgMCAwIDAgMTYgOS41QTYuNSA2LjUgMCAxIDAgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTl6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNVMxNCA3LjAxIDE0IDkuNVMxMS45OSAxNCA5LjUgMTQiLz48L3N2Zz4="
+                      alt="search">
+                  </label>
+                </div>
+                <input type="text" id="search" name="search" class="search" placeholder="Search...">
+              </div>
+            </form>
+          </div>
+          <div class="div-inline">
+            <a href="register.html">Register</a>
+          </div>
+          <div id="login" class="div-inline">
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+  
+        <div id="mobile-menu">
+          <input type="checkbox" id="menu-checkbox" name="menu-checkbox" />
+          <label for="menu-checkbox" class="dropdown-menu-btn">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+              alt="mobile-menu" />
+          </label>
+          <div id="dropdown-menu">
+            <div>
+              <div class="div-inline mobile-search-form-wrapper">
+                <form action="" onsubmit="">
+                  <div class="mobile-search-wrapper">
+                    <div class="search-label-wrapper">
+                      <label for="search" class="mobile-search-label">
+                        <img
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0xNS41IDE0aC0uNzlsLS4yOC0uMjdBNi40NzEgNi40NzEgMCAwIDAgMTYgOS41QTYuNSA2LjUgMCAxIDAgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTl6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNVMxNCA3LjAxIDE0IDkuNVMxMS45OSAxNCA5LjUgMTQiLz48L3N2Zz4="
+                          alt="search">
+                      </label>
+                    </div>
+                    <input type="text" id="search" name="search" class="mobile-search" placeholder="Search...">
+                  </div>
+                </form>
+              </div>
+              <div class="div-center">
+                <ul>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="/pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="/about.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="/contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <div class="warning-wrapper">
+      <div>
+        <input type="checkbox" class="warning-checkbox" name="warning-checkbox" id="content-warning" />
+        <label for="content-warning" class="warning-close-btn" id="content-warning-label">
+          <img
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0ibTEyIDEzLjRsLTQuOSA0LjlxLS4yNzUuMjc1LS43LjI3NXQtLjctLjI3NXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN2w0LjktNC45bC00LjktNC45cS0uMjc1LS4yNzUtLjI3NS0uN3QuMjc1LS43cS4yNzUtLjI3NS43LS4yNzV0LjcuMjc1bDQuOSA0LjlsNC45LTQuOXEuMjc1LS4yNzUuNy0uMjc1dC43LjI3NXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43TDEzLjQgMTJsNC45IDQuOXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzV6IiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjkpOyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMi4yMjA0NDYwNDkyNTAzMTNlLTE2KSIvPgo8L3N2Zz4="
+            alt="warning-close-btn" />
+        </label>
+        <div class="warning">
+          <ul>
+            <li class="warning-icon">
+              <img
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEgMjFMMTIgMmwxMSAxOXptMTEtM3EuNDI1IDAgLjcxMy0uMjg4VDEzIDE3cTAtLjQyNS0uMjg4LS43MTJUMTIgMTZxLS40MjUgMC0uNzEyLjI4OFQxMSAxN3EwIC40MjUuMjg4LjcxM1QxMiAxOG0tMS0zaDJ2LTVoLTJ6IiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjkpOyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMi4yMjA0NDYwNDkyNTAzMTNlLTE2KSIvPgo8L3N2Zz4="
+                alt="warning">
+            </li>
+            <li>
+              <p>All content was generated by ChatGPT</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <div class="div-0-padding content-section div-100p-width">
+    <section class="sidebar">
+      <input type="checkbox" id="sidebar-checkbox" name="sidebar-checkbox" />
+      <label for="sidebar-checkbox" class="sidebar-btn">
+        <div class="sidebar-btn-img-wrapper">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+            alt="mobile-menu" />
+        </div>
+      </label>
+
+      <div class="sidebar-content-wrapper">
+        <div class="sidebar-content">
+          <ul>
+            <li>
+              <a href="#title-wrapper">Tech Glitchinator 9000</a>
+            </li>
+            <li>
+              <a href="#our-story">Our Story</a>
+            </li>
+            <li>
+              <a href="#what-we-do">What We Do</a>
+            </li>
+            <li>
+              <a href="#our-philosophy">Our Philosophy</a>
+            </li>
+            <li>
+              <a href="#join-the-chaos-brigade">Join the Chaos Brigade</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="div-center div-flex-coloum div-100p-width">
+      <div class="body-wrapper div-bg-3">
+        <div>
+          <div class="div-inline-flex div-flex-coloum div-bg-3" id="title-wrapper">
+            <div>
+              <div class="div-center">
+                <h1 class="text-center">Tech Glitchinator 9000 - Where Chaos Meets Innovation</h1>
+              </div>
+              <div class="div-center">
+                <div class="div-80-width div-padding-top-5">
+                  <p class="text-center">
+                    Welcome to Tech Glitchinator 9000, where we embrace the chaos of technology and turn glitches into
+                    gold! We are your
+                    premier destination for navigating the unpredictable waters of the digital world with style and
+                    panache.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-wrapper" id="content-wrapper">
+        <div>
+          <div class="div-inline-flex div-flex-coloum" id="our-story">
+            <div class="div-center">
+              <h2 class="text-center">Our Story</h2>
+            </div>
+            <div>
+              <p>
+                Tech Glitchinator 9000 emerged from the crucible of frustration, forged by a team of relentless
+                innovators who refused
+                to be bound by the shackles of convention. In the labyrinth of binary digits and lines of code, we
+                recognized that
+                within the chaos of glitches lies the raw material of innovation. With this revelation, we embarked on a
+                mission to
+                redefine the narrative surrounding errors and turn them into beacons of creativity.
+              </p>
+            </div>
+          </div>
+          <div class="div-inline-flex div-flex-coloum" id="what-we-do">
+            <div class="div-center">
+              <h2 class="text-center">What We Do</h2>
+            </div>
+            <div>
+              <p>
+                At Tech Glitchinator 9000, we specialize in harnessing the power of chaos to fuel progress. From cryptic
+                runtime errors
+                to inexplicable crashes, we see each glitch not as a setback but as a springboard to greatness. Our team
+                of intrepid
+                engineers, fearless hackers, and code wizards fear no bug, no matter how elusive.
+              </p>
+            </div>
+            <div>
+              <p>
+                We thrive on the thrill of the unknown, diving headfirst into the heart of chaos to uncover its hidden
+                treasures.
+                Whether it's deciphering cryptic error messages or reverse-engineering faulty algorithms, we revel in
+                the challenge of
+                taming the wild frontier of technology.
+              </p>
+            </div>
+          </div>
+          <div class="div-inline-flex div-flex-coloum" id="our-philosophy">
+            <div class="div-center">
+              <h2 class="text-center">Our Philosophy</h2>
+            </div>
+            <div>
+              <p>
+                At Tech Glitchinator 9000, chaos is not the enemy—it's the muse. We believe that true innovation arises
+                from the ashes
+                of chaos, born from the collision of ideas and the friction of conflicting forces. In a world obsessed
+                with order and
+                predictability, we dare to embrace the unpredictable and harness its power for good. </p>
+            </div>
+            <div>
+              <p>
+                We reject the notion that perfection is the ultimate goal, understanding that it's often the flaws that
+                give rise to the
+                most extraordinary creations. Through our work, we seek not to eliminate chaos, but to channel it into a
+                force for
+                positive change.
+              </p>
+            </div>
+          </div>
+          <div class="div-inline-flex div-flex-coloum" id="join-the-chaos-brigade">
+            <div class="div-center">
+              <h2 class="text-center">Join the Chaos Brigade</h2>
+            </div>
+            <div>
+              <p>
+                Are you ready to unleash chaos in your favorite code base and unlock its true potential? Join us at Tech
+                Glitchinator
+                9000 and become part of a movement that celebrates the beauty of imperfection. Whether you're a seasoned
+                coder, a
+                curious explorer, or simply someone who enjoys a good challenge, there's a place for you in our
+                community of chaos
+                creators.
+              </p>
+            </div>
+            <div>
+              <p>
+                Embrace the glitch. Embrace the chaos. Welcome to Tech Glitchinator 9000—where chaos reigns supreme, and
+                innovation
+                knows no bounds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
-  <div style="height: 2000000px;"></div>
+  </div>
+
+
 </body>
 
 </html>

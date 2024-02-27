@@ -1,0 +1,62 @@
+#text-per-month {
+  font-size: 15px !important;
+  margin-left: 5px;
+}
+
+#pricing > li > div {
+  padding: 0px 15px 0px 15px;
+}
+
+#pricing > li > div > h2 {
+  margin: 10px 0px 0px 0px;
+}
+
+#pricing > li > div > div.price {
+  margin: 20px 0px 20px 0px;
+  box-sizing: border-box;
+}
+
+#pricing > li > div > div.price > span {
+  font-size: 30px;
+}
+
+#pricing > li > div > p {
+  margin: 0px;
+}
+
+ul.features {
+  list-style: circle;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 20px;
+}
+
+ul.features li {
+  padding: 5px 0;
+}
+
+ul.features p {
+  margin: 0;
+}
+
+.additional-features {
+  max-width: calc(var(--page-max-width) * 2 /3);
+}
+
+.additional-features > ul > li {
+  padding: 10px 0px;
+}
+
+@media (max-width: 1000px) {
+  #pricing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pricing > li {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    min-width: 260px;
+  }
+}

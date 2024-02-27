@@ -1,0 +1,41 @@
+.body-wrapper > div {
+  width: 100%;
+  max-width: 350px;
+}
+
+#register-wrapper {
+  padding: 10px;
+  flex: 0 1;
+  margin-top: 50px;
+  border-radius: 5px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.register-form {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register-form > input {
+  margin-bottom: 10px;
+  /* max-width: 300px; */
+  padding: 5px;
+}
+
+.register-submit {
+  display: inline-flex;
+  width: 60px;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  border-style: none;
+  box-shadow: var(--main-box-shadow);
+  padding: 5px;
+}
+
+.dont-have-account {
+  text-decoration: underline;
+  color: blue;
+}
