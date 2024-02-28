@@ -74,10 +74,6 @@
   background-color: var(--secondary-background-color);
 }
 
-.on-page {
-  
-}
-
 @media (max-width: 900px) {
   #main-nav > ul li:nth-child(n + 2) {
     margin: 0 10px;
