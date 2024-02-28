@@ -32,9 +32,6 @@
   border-style: none;
   box-shadow: var(--main-box-shadow);
   padding: 5px;
-}
-
-.login-submit {
   border-radius: 5px;
 }
 
