@@ -33,6 +33,7 @@
   border-style: none;
   box-shadow: var(--main-box-shadow);
   padding: 5px;
+  border-radius: 5px;
 }
 
 .dont-have-account {
