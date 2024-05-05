@@ -6,6 +6,19 @@
   display: none !important;
 }
 
+button.menu-button {
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+}
+
+button.menu-button > img {
+  width: 30px;
+  padding: 5px 10px 0 0 ;
+}
+
 #mobile-menu {
   display: none;
 }
@@ -13,7 +26,7 @@
 @media (max-width: 790px) {
   #mobile-menu {
     display: inline-flex;
-    margin: 16px 0px;
+    margin: auto 0px;
   }
 
   #dropdown-menu-btn {
@@ -28,16 +41,6 @@
   
   #dropdown {
     background-color: black;
-  }
-
-  #menu-checkbox:checked ~ #dropdown-menu {
-    display: block;
-    height: 0px;
-    width: 0px;
-  }
-
-  #menu-checkbox:checked ~ label > img {
-    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Im0xMiAxMy40bC00LjkgNC45cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzVxLS4yNzUtLjI3NS0uMjc1LS43dC4yNzUtLjdsNC45LTQuOWwtNC45LTQuOXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN3EuMjc1LS4yNzUuNy0uMjc1dC43LjI3NWw0LjkgNC45bDQuOS00LjlxLjI3NS0uMjc1LjctLjI3NXQuNy4yNzVxLjI3NS4yNzUuMjc1Ljd0LS4yNzUuN0wxMy40IDEybDQuOSA0LjlxLjI3NS4yNzUuMjc1Ljd0LS4yNzUuN3EtLjI3NS4yNzUtLjcuMjc1dC0uNy0uMjc1eiIvPjwvc3ZnPg==);
   }
 
   #dropdown-menu > div {

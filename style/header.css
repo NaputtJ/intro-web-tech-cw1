@@ -88,9 +88,9 @@
 
   #nav-login {
     position: relative;
-    right: 50px;
+    right: 10px;
     display: inline-flex;
-    margin: 16px 0 16px 0;
+    margin: auto 0;
   }
 }
 

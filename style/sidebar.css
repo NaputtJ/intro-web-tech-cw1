@@ -16,7 +16,7 @@
 .sidebar-btn {
   position: relative;
   top: 15px;
-  left: 15px;
+  left: 30px;
   background-color: var(--main-backgound-color);
   border-radius: 40px;
   box-shadow: var(--main-box-shadow);
@@ -30,15 +30,14 @@
   top: 5px;
 }
 
-.sidebar-content-wrapper {
+#sidebar-content-wrapper {
   display: none;
   width: 300px;
   background-color: var(--main-backgound-color);
   position: absolute;
   top: 0;
-  left: -20;
   box-shadow: var(--main-box-shadow);
-  height: 206vw;
+  height: calc(100vh - 62px);
 }
 
 .sidebar-content {
@@ -66,8 +65,4 @@
 
 #sidebar-checkbox {
   display: none !important;
-}
-
-#sidebar-checkbox:checked ~ .sidebar-content-wrapper {
-  display: block;
 }
