@@ -2,7 +2,6 @@ let warningShow = false;
 
 $(document).ready(() => {
   const cookie = (document.cookie.match(/^(?:.*;)?\s*warning\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]
-  console.log(cookie)
   if (cookie === null) {
     $("#content-warning-button").css("display", "block");
     $("div.warning").css("display", "block");

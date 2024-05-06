@@ -13,6 +13,15 @@
   box-shadow: var(--main-box-shadow);
 }
 
+button[scroll-to] {
+  text-decoration: none;
+  color: var(--nav-link-text);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 .sidebar-btn {
   position: relative;
   top: 15px;
