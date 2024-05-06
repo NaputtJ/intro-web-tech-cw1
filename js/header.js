@@ -1,14 +1,13 @@
-
-
 let bDropDownActive = false;
-let bSidebarActive = false;
 
 $(document).ready(() => {
   $("#menu-button").mouseup(toggleMenu);
-  
-  if ($("#sidebar-button").length) {
-    $("#sidebar-button").mouseup(toggleSidebar);
-  }
+  $("#content-section").mouseup(clickOutSide);
+  $(".warning-wrapper").each((_, e) => {
+    $(e).mouseup(clickOutSide);
+  });
+
+  $("#footer").mouseup(clickOutSide);
 })
 
 function toggleMenu() {
@@ -20,14 +19,10 @@ function toggleMenu() {
       : "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Im0xMiAxMy40bC00LjkgNC45cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzVxLS4yNzUtLjI3NS0uMjc1LS43dC4yNzUtLjdsNC45LTQuOWwtNC45LTQuOXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN3EuMjc1LS4yNzUuNy0uMjc1dC43LjI3NWw0LjkgNC45bDQuOS00LjlxLjI3NS0uMjc1LjctLjI3NXQuNy4yNzVxLjI3NS4yNzUuMjc1Ljd0LS4yNzUuN0wxMy40IDEybDQuOSA0LjlxLjI3NS4yNzUuMjc1Ljd0LS4yNzUuN3EtLjI3NS4yNzUtLjcuMjc1dC0uNy0uMjc1eiIvPjwvc3ZnPg=="
   );
   bDropDownActive = !bDropDownActive;
+}
 
-  if (bSidebarActive && bDropDownActive) {
-    toggleSidebar();
+function clickOutSide() {
+  if (bDropDownActive) {
+    toggleMenu();
   }
 }
-
-function toggleSidebar() {
-  $("#sidebar-content-wrapper").css("display", bSidebarActive ? "none" : "block");
-  bSidebarActive = !bSidebarActive;
-}
-
