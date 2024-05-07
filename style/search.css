@@ -101,6 +101,6 @@
   }
 
   .search-form-wrapper {
-    display: none;
+    display: none !important;
   }
 }

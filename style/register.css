@@ -6,10 +6,9 @@
 #register-wrapper {
   padding: 10px;
   flex: 0 1;
-  margin-top: 50px;
   border-radius: 5px;
   flex-direction: column;
-  margin-top: 100px;
+  width: 330px;
 }
 
 .register-form {

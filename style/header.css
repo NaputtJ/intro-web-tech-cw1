@@ -74,7 +74,7 @@
   background-color: var(--secondary-background-color);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 965px) {
   #main-nav > ul li:nth-child(n + 2) {
     margin: 0 10px;
   }
@@ -88,9 +88,9 @@
 
   #nav-login {
     position: relative;
-    right: 50px;
+    right: 10px;
     display: inline-flex;
-    margin: 16px 0 16px 0;
+    margin: auto 0;
   }
 }
 

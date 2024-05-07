@@ -7,9 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/index.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/warning.js"></script>
   <title>Tech Glitchinator 9000</title>
 </head>
 
@@ -66,12 +68,13 @@
         </div>
 
         <div id="mobile-menu">
-          <input type="checkbox" id="menu-checkbox" name="menu-checkbox" />
-          <label for="menu-checkbox" class="dropdown-menu-btn">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
-              alt="mobile-menu" />
-          </label>
+          <div class="div-v-center">
+            <button type="button" class="menu-button" id="menu-button">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+                alt="mobile-menu" />
+            </button>
+          </div>
           <div id="dropdown-menu">
             <div>
               <div class="div-inline mobile-search-form-wrapper">
@@ -84,11 +87,11 @@
                           alt="search">
                       </label>
                     </div>
-                    <input type="text" id="search" name="search" class="mobile-search" placeholder="Search...">
+                    <input type="text" id="mobile-search" name="search" class="mobile-search" placeholder="Search...">
                   </div>
                 </form>
               </div>
-              <div class="div-center">
+              <div class="div-v-center">
                 <ul>
                   <li>
                     <a href="/"><span class="text-weight-bold">Home</span></a>
@@ -113,12 +116,11 @@
     </header>
     <div class="warning-wrapper">
       <div>
-        <input type="checkbox" class="warning-checkbox" name="warning-checkbox" id="content-warning" />
-        <label for="content-warning" class="warning-close-btn" id="content-warning-label">
-          <img
-            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0ibTEyIDEzLjRsLTQuOSA0LjlxLS4yNzUuMjc1LS43LjI3NXQtLjctLjI3NXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN2w0LjktNC45bC00LjktNC45cS0uMjc1LS4yNzUtLjI3NS0uN3QuMjc1LS43cS4yNzUtLjI3NS43LS4yNzV0LjcuMjc1bDQuOSA0LjlsNC45LTQuOXEuMjc1LS4yNzUuNy0uMjc1dC43LjI3NXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43TDEzLjQgMTJsNC45IDQuOXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzV6IiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjkpOyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMi4yMjA0NDYwNDkyNTAzMTNlLTE2KSIvPgo8L3N2Zz4="
-            alt="warning-close-btn" />
-        </label>
+      <button type="button" id="content-warning-button" class="warning-button">
+        <img
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0ibTEyIDEzLjRsLTQuOSA0LjlxLS4yNzUuMjc1LS43LjI3NXQtLjctLjI3NXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN2w0LjktNC45bC00LjktNC45cS0uMjc1LS4yNzUtLjI3NS0uN3QuMjc1LS43cS4yNzUtLjI3NS43LS4yNzV0LjcuMjc1bDQuOSA0LjlsNC45LTQuOXEuMjc1LS4yNzUuNy0uMjc1dC43LjI3NXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43TDEzLjQgMTJsNC45IDQuOXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzV6IiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjkpOyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMi4yMjA0NDYwNDkyNTAzMTNlLTE2KSIvPgo8L3N2Zz4="
+          alt="warning-close-btn" />
+      </button>
         <div class="warning">
           <ul>
             <li class="warning-icon">
@@ -134,178 +136,180 @@
       </div>
     </div>
   </section>
-  <div class="div-0-padding div-62-margin-top content-section">
-    <div>
-      <div class="title-wrapper">
-        <div>
+  <section id="content-section">
+    <div class="div-0-padding div-62-margin-top content-section">
+      <div>
+        <div class="title-wrapper">
           <div>
-            <h1 class="text-70-font" id="title">Welcome to Tech Glitchinator 9000</h1>
             <div>
-              <div class="title-registration div-inline">
-                <a href="/register.html">Register for free</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="img-wrapper">
-        <div>
-          <img src="public/typing.jpg" alt="person typing" id="typing">
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="div-center div-flex-coloum">
-    <div class="body-wrapper">
-      <div>
-        <div class="div-inline-flex div-flex-coloum">
-          <div>
-            <div class="div-center">
-              <h2 class="text-center">Unleash Chaos, Ignite Innovation</h2>
-            </div>
-            <div class="div-center">
-              <div class="div-80-width div-padding-top-5">
-                <p>
-                  At Tech Glitchinator 9000, we believe that the beauty of technology lies in its imperfections. Welcome
-                  to a realm where
-                  glitches aren't just problems to solve but gateways to uncharted innovation. Step into the world of
-                  the Glitchinator,
-                  where chaos meets creativity, and glitches are our canvas. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="body-wrapper">
-      <div>
-        <div class="div-inline-flex div-flex-coloum div-100p-width">
-          <div>
-            <div class="div-center">
-              <h2 class="text-center">Our Glitch-Powered Universe</h2>
-            </div>
-            <div class="div-center">
-              <ul class="ul-column-block ul-3-column" id="powered">
-                <li>
-                  <div>
-                    <h3 class="text-center">🔧 Transformative Technologies</h3>
-                  </div>
-                  <div>
-                    <p class="powered-desc">
-                      Witness the magic of turning glitches into works of art and malfunctioning hardware into
-                      awe-inspiring creations. Our
-                      team of digital alchemists is constantly pushing the boundaries of what's possible in the world of
-                      technology.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h3 class="text-center">🎨 Digital Daredevils at Work</h3>
-                  </div>
-                  <div>
-                    <p class="powered-desc">
-                      Meet our team of mischievous engineers, code wranglers, and digital daredevils who thrive on the
-                      unexpected. From
-                      software anomalies to hardware hiccups, they see glitches not as problems but as opportunities for
-                      groundbreaking
-                      innovation.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h3 class="text-center">🚀 Glitch-Infused Inventions</h3>
-                  </div>
-                  <div>
-                    <p class="powered-desc">
-                      Explore our showcase of glitch-infused inventions that defy the ordinary. Whether it's a software
-                      bug turned into a
-                      mesmerizing visual experience or a malfunctioning device repurposed into a tech marvel, our
-                      creations redefine the
-                      limits of technological possibilities.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="body-wrapper">
-      <div>
-        <div class="div-inline-flex div-flex-coloum">
-          <div>
-            <div class="div-center div-flex-column">
-              <h2 class="text-center">Embrace the Glitch, Join the Revolution</h2>
-              <div class="div-100p-width div-center">
-                <div class="div-80-width div-padding-top-5">
-                  <p class="text-center">Tech Glitchinator 9000 isn't just a platform; it's a movement. A movement that
-                    challenges the norm, celebrates the
-                    chaos, and invites you to join the glitch revolution.</p>
+              <h1 class="text-70-font" id="title">Welcome to Tech Glitchinator 9000</h1>
+              <div>
+                <div class="title-registration div-inline">
+                  <a href="/register.html">Register for free</a>
                 </div>
               </div>
             </div>
-            <div class="div-center">
-              <ul id="join" class="ul-column-block ul-2-column">
-                <li>
-                  <div>
-                    <h3 class="text-center">🔗 Community of Innovators</h3>
-                  </div>
-                  <div>
-                    <p class="text-center powered-desc">
-                      Connect with like-minded tech enthusiasts, forward-thinking engineers, and curious minds in our
-                      vibrant community. Share
-                      your glitch-inspired ideas, collaborate on projects, and be part of a revolution that embraces the
-                      unexpected.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h3 class="text-center">🚀 Stay Updated on the Glitchiverse</h3>
-                  </div>
-                  <div>
-                    <p class="text-center powered-desc">
-                      Dive into our blog for the latest glitch-powered innovations, behind-the-scenes stories, and tech
-                      musings. The
-                      Glitchiverse is constantly evolving, and we want you to be at the forefront of the chaos.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <div>
+            <img src="public/typing.jpg" alt="person typing" id="typing">
           </div>
         </div>
       </div>
     </div>
-    <div class="body-wrapper">
-      <div>
-        <div class="div-inline-flex div-flex-coloum">
-          <div>
-            <div class="div-center">
-              <h2 class="text-center">Ready to Embrace the Glitch?</h2>
-            </div>
-            <div class="div-center">
-              <div class="div-80-width div-padding-top-5">
-                <p>
-                  Tech Glitchinator 9000 is more than a platform; it's an invitation to rethink what's possible in the
-                  world of
-                  technology. Embrace the glitch, celebrate the chaos, and join us in pushing the boundaries of
-                  innovation.
-                </p>
+    <section class="div-v-center div-flex-coloum">
+      <div class="body-wrapper">
+        <div>
+          <div class="div-inline-flex div-flex-coloum">
+            <div>
+              <div class="div-v-center">
+                <h2 class="text-center">Unleash Chaos, Ignite Innovation</h2>
+              </div>
+              <div class="div-v-center">
+                <div class="div-80-width div-padding-top-5">
+                  <p>
+                    At Tech Glitchinator 9000, we believe that the beauty of technology lies in its imperfections. Welcome
+                    to a realm where
+                    glitches aren't just problems to solve but gateways to uncharted innovation. Step into the world of
+                    the Glitchinator,
+                    where chaos meets creativity, and glitches are our canvas. </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="body-wrapper">
+        <div>
+          <div class="div-inline-flex div-flex-coloum div-100p-width">
+            <div>
+              <div class="div-v-center">
+                <h2 class="text-center">Our Glitch-Powered Universe</h2>
+              </div>
+              <div class="div-v-center">
+                <ul class="ul-column-block ul-3-column" id="powered">
+                  <li>
+                    <div>
+                      <h3 class="text-center">🔧 Transformative Technologies</h3>
+                    </div>
+                    <div>
+                      <p class="powered-desc">
+                        Witness the magic of turning glitches into works of art and malfunctioning hardware into
+                        awe-inspiring creations. Our
+                        team of digital alchemists is constantly pushing the boundaries of what's possible in the world of
+                        technology.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3 class="text-center">🎨 Digital Daredevils at Work</h3>
+                    </div>
+                    <div>
+                      <p class="powered-desc">
+                        Meet our team of mischievous engineers, code wranglers, and digital daredevils who thrive on the
+                        unexpected. From
+                        software anomalies to hardware hiccups, they see glitches not as problems but as opportunities for
+                        groundbreaking
+                        innovation.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3 class="text-center">🚀 Glitch-Infused Inventions</h3>
+                    </div>
+                    <div>
+                      <p class="powered-desc">
+                        Explore our showcase of glitch-infused inventions that defy the ordinary. Whether it's a software
+                        bug turned into a
+                        mesmerizing visual experience or a malfunctioning device repurposed into a tech marvel, our
+                        creations redefine the
+                        limits of technological possibilities.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-wrapper">
+        <div>
+          <div class="div-inline-flex div-flex-coloum">
+            <div>
+              <div class="div-v-center div-flex-column">
+                <h2 class="text-center">Embrace the Glitch, Join the Revolution</h2>
+                <div class="div-100p-width div-v-center">
+                  <div class="div-80-width div-padding-top-5">
+                    <p class="text-center">Tech Glitchinator 9000 isn't just a platform; it's a movement. A movement that
+                      challenges the norm, celebrates the
+                      chaos, and invites you to join the glitch revolution.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-v-center">
+                <ul id="join" class="ul-column-block ul-2-column">
+                  <li>
+                    <div>
+                      <h3 class="text-center">🔗 Community of Innovators</h3>
+                    </div>
+                    <div>
+                      <p class="text-center powered-desc">
+                        Connect with like-minded tech enthusiasts, forward-thinking engineers, and curious minds in our
+                        vibrant community. Share
+                        your glitch-inspired ideas, collaborate on projects, and be part of a revolution that embraces the
+                        unexpected.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h3 class="text-center">🚀 Stay Updated on the Glitchiverse</h3>
+                    </div>
+                    <div>
+                      <p class="text-center powered-desc">
+                        Dive into our blog for the latest glitch-powered innovations, behind-the-scenes stories, and tech
+                        musings. The
+                        Glitchiverse is constantly evolving, and we want you to be at the forefront of the chaos.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-wrapper">
+        <div>
+          <div class="div-inline-flex div-flex-coloum">
+            <div>
+              <div class="div-v-center">
+                <h2 class="text-center">Ready to Embrace the Glitch?</h2>
+              </div>
+              <div class="div-v-center">
+                <div class="div-80-width div-padding-top-5">
+                  <p>
+                    Tech Glitchinator 9000 is more than a platform; it's an invitation to rethink what's possible in the
+                    world of
+                    technology. Embrace the glitch, celebrate the chaos, and join us in pushing the boundaries of
+                    innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
     <section id="footer">
       <footer>
         <div>
-          <div class="div-center">
+          <div class="div-v-center">
             <ul class="ul-column-block ul-3-column ul-no-box-shadow ul-no-border" id="footer-ul">
               <li>
                 <div>
@@ -363,7 +367,7 @@
               </li>
             </ul>
           </div>
-          <div class="div-center" id="copyright">
+          <div class="div-v-center" id="copyright">
             <span class="text-center">© 2024 Tech Glitchinator 9000. All rights reserved</span>
           </div>
         </div>

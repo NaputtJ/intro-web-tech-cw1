@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/about.css">
   <link rel="stylesheet" href="style/sidebar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/warning.js"></script>
+  <script src="js/sidebar.js"></script>
   <title>About</title>
 </head>
 
@@ -41,7 +44,7 @@
             <a href="/contact.html">Contact us</a>
           </li>
         </ul>
-  
+
         <div id="nav-login">
           <div class="div-inline search-form-wrapper">
             <form action="" onsubmit="">
@@ -64,31 +67,32 @@
             <a href="login.html">Login</a>
           </div>
         </div>
-  
+
         <div id="mobile-menu">
-          <input type="checkbox" id="menu-checkbox" name="menu-checkbox" />
-          <label for="menu-checkbox" class="dropdown-menu-btn">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
-              alt="mobile-menu" />
-          </label>
+          <div class="div-v-center">
+            <button type="button" class="menu-button" id="menu-button">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+                alt="mobile-menu" />
+            </button>
+          </div>
           <div id="dropdown-menu">
             <div>
               <div class="div-inline mobile-search-form-wrapper">
                 <form action="" onsubmit="">
                   <div class="mobile-search-wrapper">
                     <div class="search-label-wrapper">
-                      <label for="search" class="mobile-search-label">
+                      <label for="mobile-search" class="mobile-search-label">
                         <img
                           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0xNS41IDE0aC0uNzlsLS4yOC0uMjdBNi40NzEgNi40NzEgMCAwIDAgMTYgOS41QTYuNSA2LjUgMCAxIDAgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTl6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNVMxNCA3LjAxIDE0IDkuNVMxMS45OSAxNCA5LjUgMTQiLz48L3N2Zz4="
                           alt="search">
                       </label>
                     </div>
-                    <input type="text" id="search" name="search" class="mobile-search" placeholder="Search...">
+                    <input type="text" id="mobile-search" name="search" class="mobile-search" placeholder="Search...">
                   </div>
                 </form>
               </div>
-              <div class="div-center">
+              <div class="div-v-center">
                 <ul>
                   <li>
                     <a href="/">Home</a>
@@ -113,12 +117,11 @@
     </header>
     <div class="warning-wrapper">
       <div>
-        <input type="checkbox" class="warning-checkbox" name="warning-checkbox" id="content-warning" />
-        <label for="content-warning" class="warning-close-btn" id="content-warning-label">
+        <button type="button" id="content-warning-button" class="warning-button">
           <img
             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0ibTEyIDEzLjRsLTQuOSA0LjlxLS4yNzUuMjc1LS43LjI3NXQtLjctLjI3NXEtLjI3NS0uMjc1LS4yNzUtLjd0LjI3NS0uN2w0LjktNC45bC00LjktNC45cS0uMjc1LS4yNzUtLjI3NS0uN3QuMjc1LS43cS4yNzUtLjI3NS43LS4yNzV0LjcuMjc1bDQuOSA0LjlsNC45LTQuOXEuMjc1LS4yNzUuNy0uMjc1dC43LjI3NXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43TDEzLjQgMTJsNC45IDQuOXEuMjc1LjI3NS4yNzUuN3QtLjI3NS43cS0uMjc1LjI3NS0uNy4yNzV0LS43LS4yNzV6IiBzdHlsZT0iZmlsbDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjkpOyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMi4yMjA0NDYwNDkyNTAzMTNlLTE2KSIvPgo8L3N2Zz4="
             alt="warning-close-btn" />
-        </label>
+        </button>
         <div class="warning">
           <ul>
             <li class="warning-icon">
@@ -137,46 +140,47 @@
 
   <div class="div-0-padding content-section div-100p-width">
     <section class="sidebar">
-      <input type="checkbox" id="sidebar-checkbox" name="sidebar-checkbox" />
-      <label for="sidebar-checkbox" class="sidebar-btn">
-        <div class="sidebar-btn-img-wrapper">
-          <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
-            alt="mobile-menu" />
-        </div>
-      </label>
-
-      <div class="sidebar-content-wrapper">
+      <div class="div-v-center">
+        <button type="button" class="menu-button sidebar-btn" id="sidebar-button">
+          <div class="sidebar-btn-img-wrapper">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00IDE4cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTdxMC0uNDI1LjI4OC0uNzEyVDQgMTZoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDE3cTAgLjQyNS0uMjg4LjcxM1QyMCAxOHptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgMTJxMC0uNDI1LjI4OC0uNzEyVDQgMTFoMTZxLjQyNSAwIC43MTMuMjg4VDIxIDEycTAgLjQyNS0uMjg4LjcxM1QyMCAxM3ptMC01cS0uNDI1IDAtLjcxMi0uMjg4VDMgN3EwLS40MjUuMjg4LS43MTJUNCA2aDE2cS40MjUgMCAuNzEzLjI4OFQyMSA3cTAgLjQyNS0uMjg4LjcxM1QyMCA4eiIvPjwvc3ZnPg=="
+              alt="mobile-menu" />
+          </div>
+        </button>
+      </div>
+      <div id="sidebar-content-wrapper">
         <div class="sidebar-content">
           <ul>
             <li>
-              <a href="#title-wrapper">Tech Glitchinator 9000</a>
+              <button type="button" scroll-to="title" class="menu-button">Tech Glitchinator 9000</button>
             </li>
             <li>
-              <a href="#our-story">Our Story</a>
+              <button type="button" scroll-to="our-story" class="menu-button">Our Story</button>
             </li>
             <li>
-              <a href="#what-we-do">What We Do</a>
+              <button type="button" scroll-to="what-we-do" class="menu-button">What We Do</button>
             </li>
             <li>
-              <a href="#our-philosophy">Our Philosophy</a>
+              <button type="button" scroll-to="our-philosophy" class="menu-button">Our Philosophy</button>
             </li>
             <li>
-              <a href="#join-the-chaos-brigade">Join the Chaos Brigade</a>
+              <button type="button" scroll-to="join-the-chaos-brigade" class="menu-button">Join the Chaos
+                Brigade</button>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="div-center div-flex-coloum div-100p-width">
-      <div class="body-wrapper div-bg-3">
+    <section class="div-v-center div-flex-coloum div-100p-width" id="content-section">
+      <div class="body-wrapper div-bg-3" id="title">
         <div>
           <div class="div-inline-flex div-flex-coloum div-bg-3" id="title-wrapper">
             <div>
-              <div class="div-center">
+              <div class="div-v-center">
                 <h1 class="text-center">Tech Glitchinator 9000 - Where Chaos Meets Innovation</h1>
               </div>
-              <div class="div-center">
+              <div class="div-v-center">
                 <div class="div-80-width div-padding-top-5">
                   <p class="text-center">
                     Welcome to Tech Glitchinator 9000, where we embrace the chaos of technology and turn glitches into
@@ -193,7 +197,7 @@
       <div class="body-wrapper" id="content-wrapper">
         <div>
           <div class="div-inline-flex div-flex-coloum" id="our-story">
-            <div class="div-center">
+            <div class="div-v-center">
               <h2 class="text-center">Our Story</h2>
             </div>
             <div>
@@ -209,7 +213,7 @@
             </div>
           </div>
           <div class="div-inline-flex div-flex-coloum" id="what-we-do">
-            <div class="div-center">
+            <div class="div-v-center">
               <h2 class="text-center">What We Do</h2>
             </div>
             <div>
@@ -232,7 +236,7 @@
             </div>
           </div>
           <div class="div-inline-flex div-flex-coloum" id="our-philosophy">
-            <div class="div-center">
+            <div class="div-v-center">
               <h2 class="text-center">Our Philosophy</h2>
             </div>
             <div>
@@ -254,7 +258,7 @@
             </div>
           </div>
           <div class="div-inline-flex div-flex-coloum" id="join-the-chaos-brigade">
-            <div class="div-center">
+            <div class="div-v-center">
               <h2 class="text-center">Join the Chaos Brigade</h2>
             </div>
             <div>
@@ -279,14 +283,13 @@
         </div>
       </div>
     </section>
+  </div>
 
-  </div>
-  </div>
 
   <section id="footer">
     <footer>
       <div>
-        <div class="div-center">
+        <div class="div-v-center">
           <ul class="ul-column-block ul-3-column ul-no-box-shadow ul-no-border" id="footer-ul">
             <li>
               <div>
@@ -344,7 +347,7 @@
             </li>
           </ul>
         </div>
-        <div class="div-center" id="copyright">
+        <div class="div-v-center" id="copyright">
           <span class="text-center">© 2024 Tech Glitchinator 9000. All rights reserved</span>
         </div>
       </div>

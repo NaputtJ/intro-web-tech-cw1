@@ -43,6 +43,10 @@ ul.features p {
   max-width: calc(var(--page-max-width) * 2 /3);
 }
 
+.additional-features > ul {
+  padding-left: 50px;
+}
+
 .additional-features > ul > li {
   padding: 10px 0px;
 }
